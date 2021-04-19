@@ -1,0 +1,102 @@
+.card {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+  box-shadow: 0px 10px 5px 0px #beb3b3;
+}
+
+.card:nth-child(odd) {
+  height: 90%;
+  color: rgb(65, 61, 61);
+  background: white;
+}
+
+.card-name {
+  margin: 5% 0%;
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card-precio {
+  /* color: white; */
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.card-precio,
+.card-send,
+.card-storage,
+.card-users {
+  font-weight: 800;
+  width: 90%;
+  text-align: center;
+  padding: 5% 0%;
+  border-bottom: 1px solid white;
+}
+
+.card-precio::before {
+  content: '$';
+}
+
+.card-precio::after {
+  content: '.99';
+}
+
+.card-btn {
+  outline: none;
+  border: 2px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  background-color: white;
+  width: 85%;
+  margin: 5% 0%;
+  padding: 4%;
+  font-weight: 800;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.card:nth-child(odd) > .card-btn {
+  color: #fff;
+  border: 2px solid white;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.card-btn:hover {
+  color: #fff;
+  border: 2px solid white;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.card:nth-child(odd) > .card-btn:hover {
+  border: 2px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  background: white;
+}
+
+@media screen and (max-width: 375px) {
+  .card,
+  .card:nth-child(odd) {
+    width: 90%;
+    height: 60%;
+    margin: 5% auto;
+  }
+
+  .card-btn:hover,
+  .card:nth-child(odd) > .card-btn:hover {
+    border: 2px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background: white;
+  }
+}
