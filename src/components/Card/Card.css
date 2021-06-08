@@ -30,7 +30,6 @@
 }
 
 .card-precio {
-  /* color: white; */
   font-weight: 700;
   font-size: 4rem;
 }
@@ -85,7 +84,7 @@
   background: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   .card,
   .card:nth-child(odd) {
     width: 90%;

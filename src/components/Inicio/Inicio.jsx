@@ -5,9 +5,7 @@ import Switch from '../Switch/Switch';
 
 const Inicio = () => {
   const [plan, setPlan] = useState(false);
-  // const cheackPlan = () => {
-
-  // }
+  
   const planMensual = [
     {
       name: 'Basic',
